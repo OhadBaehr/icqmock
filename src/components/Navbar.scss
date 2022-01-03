@@ -1,0 +1,71 @@
+@import url('../constants.scss');
+
+.nav {
+    display: flex;
+    gap    : 20px;
+    height : 70px;
+    width  : 100%;
+    background : rgb(223, 223, 223);
+    align-items: center;
+    .content {
+        padding-right: 20px;
+    }
+
+    .avatar {
+        width: 45px;
+    }
+
+    .name {
+        margin-left: 10px;
+        font-size  : larger;
+        font-weight: bold;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    .camera {
+        margin-left : auto;
+        margin-right: 25px;
+        width       : 25px;
+    }
+
+    .more {
+        width: 6px;
+    }
+
+    .chat-banner {
+        display    : flex;
+        align-items: center;
+    }
+}
+
+.side {
+    padding-left: 20px;
+    display     : flex;
+    height      : 100%;
+    width       : var(--side-nav-width);
+    min-width: var(--side-nav-width);
+    position    : relative;
+    background  : rgb(187, 187, 187);
+
+    span {
+        position : absolute;
+        transform: translate(50%, -50%);
+        top      : 50%;
+        right    : 50%;
+        margin   : 0 auto;
+        font-size:larger;
+        font-weight: bold;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+
+    img {
+        margin-left : auto;
+        width       : 22px;
+        margin-right: 40px;
+    }
+    border-right: 1px solid rgb(228, 228, 228);
+}
+
+.content {
+    width: var(--content-width);
+}
